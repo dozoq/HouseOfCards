@@ -12,10 +12,7 @@ Card::Card(CardFigure f) : suit(CardSuit::DIAMOND), figure(f) {
 Card::Card(CardSuit s, CardFigure f) : suit(s), figure(f) {
     this->cID = Card::Id++;
 }
-Card::~Card() {
-    //dtor
-}
-std::string Card::show()
+std::string Card::show() const
 {
     std::string message;
     message.append(this->getFigureStr());
@@ -35,7 +32,7 @@ CardFigure Card::getFigure() const
 {
     return this->figure;
 }
-std::string Card::getSuitStr()
+std::string Card::getSuitStr() const
 {
     std::string suitStr;
     switch (this->suit)
@@ -55,9 +52,9 @@ std::string Card::getSuitStr()
     }
     return suitStr;
 }
-std::string Card::getFigureStr()
+std::string Card::getFigureStr() const
 {
-    std::string figureStr;
+    std::string figureStr{};
     switch (this->figure)
     {
     case CardFigure::TWO:

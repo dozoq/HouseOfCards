@@ -1,9 +1,6 @@
 #include "War.h"
 
-War::War()
-{
 
-}
 void War::start()
 {
     Deck temp = Deck(1);
@@ -35,6 +32,7 @@ void War::play()
         {
             play = false;
         }
+        getchar();
     }
 }
 void War::compareAndRemove()
@@ -92,8 +90,4 @@ void War::compareAndRemove()
         this->computerCardsInWar.clear();
         this->playerCardsInWar.clear();
     }
-}
-War::~War()
-{
-    //dtor
 }

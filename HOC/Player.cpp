@@ -1,11 +1,11 @@
 #include "Player.h"
 
-Player::Player()
+void Player::giveCard(Card& card)
 {
-    //ctor
+    throw "Function not implemented yet.";
 }
 
-Player::~Player()
+void Player::throwoutCard(Card& card)
 {
-    //dtor
+    throw "Function not implemented yet.";
 }

@@ -9,20 +9,19 @@
 class War
 {
 public:
-    War();
-    virtual ~War();
+    War() noexcept = default;
     void start();
     void play();
     std::vector<Card> playerCardsInWar;
     std::vector<Card> computerCardsInWar;
-    Card playerWarCard;
-    Card computerWarCard;
+    Card playerWarCard{};
+    Card computerWarCard{};
 protected:
 
 private:
     void compareAndRemove();
-    Deck computerDeck;
-    Deck playerDeck;
+    Deck computerDeck{};
+    Deck playerDeck{};
 
 
 };

@@ -57,7 +57,7 @@ void Deck::shuffleDeck() {
         this->cardstack.push_back(temp[k]);
     }
 }
-void Deck::addToDeck(Card card)
+void Deck::addToDeck(const Card &card)
 {
     this->cardstack.push_back(card);
 }
@@ -74,11 +74,11 @@ Card Deck::Draw()
         return Card();
     }
 }
-void Deck::addUnderDeck(Card card)
+void Deck::addUnderDeck(const Card& card)
 {
     this->cardstack.push_front(card);
 }
-void Deck::addUnderDeck(std::vector<Card> cards)
+void Deck::addUnderDeck(const std::vector<Card>& cards)
 {
     for (Card c : cards)
     {
@@ -100,8 +100,4 @@ void Deck::debugDeck()
 int Deck::decksize() const
 {
     return this->cardstack.size();
-}
-Deck::~Deck()
-{
-    //dtor
 }

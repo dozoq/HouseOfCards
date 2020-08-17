@@ -31,12 +31,10 @@ public:
     Card(CardSuit s, CardFigure f);
     Card(CardSuit s);
     Card(CardFigure f);
-    //Destructor
-    virtual ~Card();
     //String methods
-    std::string show();
-    std::string getSuitStr();
-    std::string getFigureStr();
+    std::string show() const;
+    std::string getSuitStr() const;
+    std::string getFigureStr() const;
     //Getters
     CardSuit getSuit() const;
     CardFigure getFigure() const;
@@ -44,12 +42,9 @@ public:
     bool operator ==(const Card& card);
     bool operator >(const Card& card);
     bool operator <(const Card& card);
-
-protected:
-
 private:
-    int cID;
-    CardSuit suit;
-    CardFigure figure;
+    int                  cID{ 0 };
+    CardSuit             suit{ CardSuit::DIAMOND };
+    CardFigure           figure{ CardFigure::ACE };
 };
 
