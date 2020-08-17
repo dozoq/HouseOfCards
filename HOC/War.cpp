@@ -1,6 +1,10 @@
 #include "War.h"
 
 
+War::War()
+{
+}
+
 void War::start()
 {
     Deck temp = Deck(1);

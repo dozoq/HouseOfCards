@@ -22,6 +22,7 @@ int main()
     War* war1 = new War();
     war1->start();
     war1->play();
+    delete war1;
     getchar();
     return 0;
 }

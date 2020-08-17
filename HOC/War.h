@@ -9,7 +9,7 @@
 class War
 {
 public:
-    War() noexcept = default;
+    War();
     void start();
     void play();
     std::vector<Card> playerCardsInWar;
