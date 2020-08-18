@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="GameLib">
+      <UniqueIdentifier>{496664a2-dc2a-4368-bb4b-6b62cee69af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestRect">
+      <UniqueIdentifier>{71924a45-f7eb-47f0-ad4d-e6bff7f3941f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HOC.cpp">
@@ -30,6 +36,12 @@
     <ClCompile Include="Player.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="ColorChangingRect.cpp">
+      <Filter>TestRect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameLib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h">
@@ -43,6 +55,15 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorChangingRect.h">
+      <Filter>TestRect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameLib</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
